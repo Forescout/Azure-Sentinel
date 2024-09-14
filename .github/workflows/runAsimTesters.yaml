@@ -33,6 +33,7 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
           enable-AzPSSession: true
+          run: echo "$client-id"
       - name: Setup git config
         run: |
           git config --local user.name "github-actions[bot]"
